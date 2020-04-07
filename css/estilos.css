@@ -6,6 +6,16 @@ a{
     margin-right: 5px;  
 }
 
+.jumbotron{
+    
+    height: 100vh;
+    background-image: url("../resoruces/img/portada.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light ;
+    background-color: rgba(0, 0, 0, 0.205) !important;
+    
+}
 
 /*Animacion  entrada de  abajo hacia arriba*/
 .fadeInUp {
