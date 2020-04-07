@@ -8,6 +8,7 @@ a{
 }
 
 .jumbotron{   
+    max-width: 100vw;
     height: 100vh;
     background-image: url("../resoruces/img/portada.png");
     background-position: initial;
@@ -16,9 +17,20 @@ a{
     background-blend-mode: soft-light ;
     background-color: rgba(0, 0, 0, 0.205) !important;
 }
+
+.jumbotron .container{
+    margin-top: 10rem;
+}
 @media (max-width: 576px) { 
     .jumbotron{
+        max-width: 100vw;
         background-position: center;
+    }
+    .jumbotron .display-1{
+        font-size: 3.5rem;
+    }
+    .jumbotron .container{
+        margin-top: 10rem;
     }
 }
 /*Animacion  entrada de  abajo hacia arriba*/
