@@ -1,9 +1,9 @@
 const navLinks = document.querySelectorAll('.nav-link');
-const $btnNav = document.getElementById('btnNav');
+const $navbarNav = document.getElementById('navbarNav');
 const listenNavLinks = () => {
     navLinks.forEach(element => {
         element.addEventListener('click', () => {
-            $btnNav.click();
+            $navbarNav.classList.remove('show');
         });
     });
 }
