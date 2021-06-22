@@ -11,9 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     listenNavLinks();
 })
 
-/**
- * * Esta función únicamente asigna la clase show a todos los iconos de líneas tematicas
- */
+// * Esta función únicamente asigna la clase show a todos los iconos de líneas tematicas
 function mostrarIconos() {
     var iconos = document.querySelectorAll(".img-thumbnail");
     iconos.forEach(icono => {
@@ -22,20 +20,16 @@ function mostrarIconos() {
 }
 
 window.onload = function() {
-    // var header = document.getElementById("sobre-mi");
-    // var sticky = header.offsetTop;
     window.addEventListener("scroll", function() {
         let $tematicasFirstRow = document.getElementById("img-porfile");
         elementIsVisible($tematicasFirstRow);
     });
 };
 
-/**
- * * Función para saber cuando un elemento es visible justo cunado
- * *entra en pantalla, es decir esta visible
- * * Información importante esta resaltada
- * ? Sera ideal darle un pequeño rango?
- */
+// * Función para saber cuando un elemento es visible justo cunado
+// *entra en pantalla, es decir esta visible
+// * Información importante esta resaltada
+// ? Sera ideal darle un pequeño rango?
 const elementIsVisible = ($element) => {
     //* Obtenemos la altura  del documento cliente
     let clientHeight = document.documentElement.clientHeight;

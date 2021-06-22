@@ -18,7 +18,7 @@
     }
     
     .fixed {
-        position: absolute;
+        position: fixed;
     }
     
     .navbar.darkgradient {
@@ -118,7 +118,7 @@
     
     .fadeInUp {
         max-width: 100vw;
-        animation-duration: 3s;
+        animation-duration: 1.5s;
         animation-name: fadeInUp;
     }
     
@@ -135,7 +135,7 @@
     /*Animacion  entrada derecha*/
     
     .fadeInRight {
-        animation-duration: 3s;
+        animation-duration: 1.5s;
         animation-name: fadeInRight;
     }
     
@@ -144,7 +144,7 @@
             opacity: 0;
             /* transform: translate3d(15vw, 0, 0); */
             /* margin-left: 15vw; */
-            transform: translate(150px, 0) scale(1);
+            transform: translate(-150px, 0) scale(1);
         }
         to {
             opacity: 1;
