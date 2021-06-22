@@ -40,6 +40,14 @@ a {
     align-items: center;
 }
 
+#sobre-mi .row {
+    align-items: center;
+}
+
+#img-porfile {
+    max-width: 80%;
+}
+
 @media (max-width: 576px) {
     .jumbotron {
         background-position: top;
