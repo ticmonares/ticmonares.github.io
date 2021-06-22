@@ -1,141 +1,167 @@
-body {
-    max-width: 100vw;
-}
-
-section {
-    margin: 0px;
-    padding: 0px;
-}
-
-a {
-    text-decoration: none !important;
-}
-
-.jumbotron .container h1 {
-    display: flex;
-    min-width: 100%;
-}
-
-.jumbotron .container p {
-    display: flex;
-    min-width: 100%;
-}
-
-.jumbotron-icon {
-    color: #fff;
-    margin-right: 5px;
-}
-
-.jumbotron {
-    max-width: 100vw;
-    height: 100vh;
-    background-image: url("../resoruces/img/portada.jpg");
-    background-attachment: fixed;
-    background-position: initial;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: soft-light;
-    background-color: rgba(0, 0, 0, 0.850) !important;
-    display: flex;
-    align-items: center;
-}
-
-#sobre-mi .row {
-    align-items: center;
-}
-
-#img-porfile {
-    max-width: 80%;
-}
-
-@media (max-width: 576px) {
-    .jumbotron {
-        background-position: top;
-        background-image: url("../resoruces/img/portada-smart.jpeg");
+    body {
+        max-width: 100vw;
     }
-}
-
-.jumbotron .container {
-    /* margin-top: 7rem; */
-}
-
-@media (max-width: 576px) {
+    
+    section {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    a {
+        text-decoration: none !important;
+        color: #42abf5;
+        transition: color 1s;
+    }
+    
+    a:hover {
+        color: #42abf5;
+    }
+    
+    .fixed {
+        position: absolute;
+    }
+    
+    .navbar.darkgradient {
+        background-color: #2b2b2b!important;
+        background: linear-gradient(to left, #575757 0, #605e5b 5%, #282827 47%, #181715 100%);
+    }
+    
+    .nav-link:hover {
+        color: #42abf5 !important;
+    }
+    
+    .ml-auto {
+        margin-left: auto;
+    }
+    
+    .jumbotron .container h1 {
+        display: flex;
+        min-width: 100%;
+    }
+    
+    .jumbotron .container p {
+        display: flex;
+        min-width: 100%;
+    }
+    
+    .jumbotron-icon {
+        color: #fff;
+        margin-right: 5px;
+    }
+    
     .jumbotron {
         max-width: 100vw;
-        background-position: center;
+        height: 100vh;
+        background-image: url("../resoruces/img/portada.jpg");
+        background-attachment: fixed;
+        background-position: initial;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: soft-light;
+        background-color: rgba(0, 0, 0, 0.850) !important;
+        display: flex;
+        align-items: center;
     }
-    .jumbotron .display-1 {
-        font-size: 2.5rem;
+    
+    #sobre-mi .row {
+        align-items: center;
     }
-    .jumbotron .container {
-        margin-top: 10rem;
-    }
-}
-
-@media (max-height: 576px) {
-    .jumbotron {
-        background-position: inherit;
-    }
-    .jumbotron .display-1 {
-        font-size: 4.0rem;
-    }
-    .jumbotron .display-5 {
-        font-size: 1rem;
-    }
-    .jumbotron .container {
-        margin-top: 0rem;
-    }
-}
-
-
-/*Animacion  entrada de  abajo hacia arriba*/
-
-.fadeInUp {
-    max-width: 100vw;
-    animation-duration: 3s;
-    animation-name: fadeInUp;
-}
-
-@keyframes fadeInUp {
-    from {
+    
+    #img-porfile {
+        max-width: 80%;
         opacity: 0;
-        transform: translate3d(0, 100%, 0);
+        transform: translate(0) scale(0);
+        transition: all 1s ease-in-out;
     }
-    to {
+    
+    #img-porfile.show {
         opacity: 1;
-        transform: translate3d(0, 0, 0);
+        transform: translate(0) scale(1);
     }
-}
-
-
-/*Animacion  entrada derecha*/
-
-.fadeInRight {
-    animation-duration: 3s;
-    animation-name: fadeInRight;
-}
-
-@keyframes fadeInRight {
-    from {
-        opacity: 0;
-        /* transform: translate3d(15vw, 0, 0); */
-        margin-left: 15vw;
+    
+    @media (max-width: 576px) {
+        .jumbotron {
+            background-position: top;
+            background-image: url("../resoruces/img/portada-smart.jpeg");
+        }
     }
-    to {
-        opacity: 1;
-        /* transform: translate3d(0, 0, 0); */
-        margin-left: 0px;
+    /* .jumbotron {} */
+    
+    @media (max-width: 576px) {
+        .jumbotron {
+            max-width: 100vw;
+            background-position: center;
+        }
+        .jumbotron .display-1 {
+            font-size: 2.5rem;
+        }
+        .jumbotron .container {
+            margin-top: 10rem;
+        }
     }
-}
-
-.jumbotron .container p {
-    max-width: 100vw;
-}
-
-.table {
-    max-width: 100vw;
-}
-
-.navbar {
-    max-width: 100vw;
-}
+    
+    @media (max-height: 576px) {
+        .jumbotron {
+            background-position: inherit;
+        }
+        .jumbotron .display-1 {
+            font-size: 4.0rem;
+        }
+        .jumbotron .display-5 {
+            font-size: 1rem;
+        }
+        .jumbotron .container {
+            margin-top: 0rem;
+        }
+    }
+    /*Animacion  entrada de  abajo hacia arriba*/
+    
+    .fadeInUp {
+        max-width: 100vw;
+        animation-duration: 3s;
+        animation-name: fadeInUp;
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translate3d(0, 100%, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    /*Animacion  entrada derecha*/
+    
+    .fadeInRight {
+        animation-duration: 3s;
+        animation-name: fadeInRight;
+    }
+    
+    @keyframes fadeInRight {
+        from {
+            opacity: 0;
+            /* transform: translate3d(15vw, 0, 0); */
+            /* margin-left: 15vw; */
+            transform: translate(150px, 0) scale(1);
+        }
+        to {
+            opacity: 1;
+            /* transform: translate3d(0, 0, 0); */
+            /* margin-left: 0px; */
+            transform: translate(0, 0) scale(1);
+        }
+    }
+    
+    .jumbotron .container p {
+        max-width: 100vw;
+    }
+    
+    .table {
+        max-width: 100vw;
+    }
+    
+    .navbar {
+        max-width: 100vw;
+    }
