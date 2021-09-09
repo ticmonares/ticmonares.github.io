@@ -13,11 +13,13 @@
     <link rel="stylesheet" type="text/css" href="resoruces/iconos/css/all.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="js/bootstrap.min.js">
+    </script>
+    <script src="libs/particles.js-master/particles.min.js">
     </script>
     <!--Mis estilos-->
     <link rel="stylesheet" href="css/estilos.css">
@@ -25,6 +27,8 @@
 
 <body>
     <header>
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
         <div class="encabezado" id="encabezado">
             <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg darkgradient">
                 <div class="container-fluid">
@@ -88,14 +92,13 @@
             <div class="col-12 col-lg-6 mt-5">
                 <h2 class="mt-5">Sobre mí</h2>
                 <p style="font-size: 1.5rem;" class="text-justify">
-                    Soy comrpometido y apasionado en todo lo que hago, tengo ideas innovadoras, me gustan los retos, los
-                    nuevos proyectos y siempre entrego el 100%. Tengo la capacidad de relacionarme con las personas, me
-                    gusta enfrentar los obstáculos que surgen y mi misión
-                    es cumplir con los objetivos. Me gustan los idiomas y relacionarme con gente de todo el mundo.
-                    Realizo análisis, diseño e implementación de soluciones tecnológicas vanguardistas. La programación
-                    es una actividad que realmente me gusta,
-                    manejo de lenguajes como javascript, PHP, Java y un poco de Python. <br>
-                </p>
+                    Soy comprometido y apasionado, tengo ideas innovadoras, me gustan los retos, los
+                    nuevos proyectos y siempre me entrego el 100%.
+                    Me gustan los idiomas y relacionarme con gente de todo el mundo.
+                    Realizo análisis, diseño e implementación de soluciones tecnológicas vanguardistas.
+                    La programación es una de las actividades que realmente disfruto
+                    manejo de lenguajes como javascript, PHP, Java y un poco de Python.
+                    Creo que la UI y UX es tan importante como la lógica y el backend.
             </div>
         </div>
     </div>
@@ -302,21 +305,10 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>LinkedIn</td>
-                                <td>Fundamentos del desarrollo web Full Stack o Frontend</td>
-                                <td>
-                                    <a class="btn btn-info "
-                                        href="resoruces\pdf\diplomas/CertificadoDeFinalizacion_Fundamentos del desarrollo web Full Stack o Frontend.pdf"
-                                        target="_blank">
-                                        Ver
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
                                 <td>Platzi</td>
                                 <td>Programación Básica</td>
                                 <td>
-                                    <a class="btn btn-info "
+                                    <a class="btn btn-info ver-certificado "
                                         href="resoruces\pdf\diplomas/diploma-programacion-basica.pdf " target="_blank">
                                         Ver
                                     </a>
@@ -326,7 +318,7 @@
                                 <td>Google</td>
                                 <td>Introducción al desarrollo web I</td>
                                 <td>
-                                    <a class="btn btn-info "
+                                    <a class="btn btn-info ver-certificado "
                                         href="resoruces\pdf\diplomas/Google-certificado-introducción-al-desarrollo-web-I.pdf"
                                         target="_blank">
                                         Ver
@@ -337,7 +329,7 @@
                                 <td>Google</td>
                                 <td>Introducción al desarrollo web II</td>
                                 <td>
-                                    <a class="btn btn-info "
+                                    <a class="btn btn-info ver-certificado "
                                         href="resoruces\pdf\diplomas/Google-certificado-introducción-al-desarrollo-web-II.pdf"
                                         target="_blank">
                                         Ver
@@ -348,7 +340,7 @@
                                 <td>Capacitate para el empleo</td>
                                 <td>Trabajo remoto</td>
                                 <td>
-                                    <a class="btn btn-info "
+                                    <a class="btn btn-info ver-certificado "
                                         href="resoruces\pdf\diplomas/Trabajo-Remoto Capacitate-para-el-empleo.pdf"
                                         target="_blank">
                                         Ver
@@ -359,7 +351,7 @@
                                 <td>Platzi</td>
                                 <td>Animación Web</td>
                                 <td>
-                                    <a class="btn btn-info "
+                                    <a class="btn btn-info ver-certificado "
                                         href="resoruces\pdf\diplomas\diploma-animaciones-web. target=" _blank "pdf">
                                         Ver
                                     </a>
@@ -369,7 +361,29 @@
                                 <td>Platzi</td>
                                 <td>Programación Orientada a Objetos</td>
                                 <td>
-                                    <a class="btn btn-info " href="resoruces\pdf\diplomas/diploma-oop.pdf"
+                                    <a class="btn btn-info ver-certificado "
+                                        href="resoruces\pdf\diplomas/diploma-oop.pdf" target="_blank">
+                                        Ver
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>LinkedIn</td>
+                                <td>Fundamentos del desarrollo web Full Stack o Frontend</td>
+                                <td>
+                                    <a class="btn btn-info ver-certificado "
+                                        href="resoruces\pdf\diplomas/CertificadoDeFinalizacion_Fundamentos del desarrollo web Full Stack o Frontend.pdf"
+                                        target="_blank">
+                                        Ver
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Escuela Judicial del Poder Judicial del Estado de México</td>
+                                <td>Ingles nivel intermedio</td>
+                                <td>
+                                    <a class="btn btn-info ver-certificado "
+                                        href="resoruces\pdf\diplomas/Constancia-de-acreditacion-Ingles-Poder-Judicial.pdf"
                                         target="_blank">
                                         Ver
                                     </a>
@@ -401,6 +415,7 @@
         </footer>
     </blockquote>
     <script src=" js/main.js"></script>
+    <script src=" js/app-particles.js"></script>
 </body>
 
 </html>

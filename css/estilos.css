@@ -1,54 +1,54 @@
     body {
         max-width: 100vw;
     }
-    
+
     section {
         margin: 0px;
         padding: 0px;
     }
-    
+
     a {
         text-decoration: none !important;
         color: #42abf5;
         transition: color 1s;
     }
-    
+
     a:hover {
         color: #42abf5;
     }
-    
+
     .fixed {
         position: fixed;
     }
-    
+
     .navbar.darkgradient {
-        background-color: #2b2b2b!important;
+        background-color: #2b2b2b !important;
         background: linear-gradient(to left, #575757 0, #605e5b 5%, #282827 47%, #181715 100%);
     }
-    
+
     .nav-link:hover {
         color: #42abf5 !important;
     }
-    
+
     .ml-auto {
         margin-left: auto;
     }
-    
+
     .jumbotron .container h1 {
         display: flex;
         min-width: 100%;
     }
-    
+
     .jumbotron .container p {
         display: flex;
         min-width: 100%;
     }
-    
+
     .jumbotron-icon {
         color: #fff;
         margin-right: 5px;
     }
-    
+
     .jumbotron {
         max-width: 100vw;
         height: 100vh;
@@ -62,83 +62,92 @@
         display: flex;
         align-items: center;
     }
-    
+
     #sobre-mi .row {
         align-items: center;
     }
-    
+
     #img-porfile {
         max-width: 80%;
         opacity: 0;
         transform: translate(0) scale(0);
         transition: all 1s ease-in-out;
     }
-    
+
     #img-porfile.show {
         opacity: 1;
         transform: translate(0) scale(1);
     }
-    
+
     @media (max-width: 576px) {
         .jumbotron {
             background-position: top;
             background-image: url("../resoruces/img/portada-smart.jpeg");
         }
     }
+
     /* .jumbotron {} */
-    
+
     @media (max-width: 576px) {
         .jumbotron {
             max-width: 100vw;
             background-position: center;
         }
+
         .jumbotron .display-1 {
             font-size: 2.5rem;
         }
+
         .jumbotron .container {
             margin-top: 10rem;
         }
     }
-    
+
     @media (max-height: 576px) {
         .jumbotron {
             background-position: inherit;
         }
+
         .jumbotron .display-1 {
             font-size: 4.0rem;
         }
+
         .jumbotron .display-5 {
             font-size: 1rem;
         }
+
         .jumbotron .container {
             margin-top: 0rem;
         }
     }
+
     /*Animacion  entrada de  abajo hacia arriba*/
-    
+
     .fadeInUp {
         max-width: 100vw;
         animation-duration: 1.5s;
         animation-name: fadeInUp;
     }
-    
+
     @keyframes fadeInUp {
         from {
             opacity: 0;
             transform: translate3d(0, 100%, 0);
         }
+
         to {
             opacity: 1;
             transform: translate3d(0, 0, 0);
         }
     }
+
     /*Animacion  entrada derecha*/
-    
+
     .fadeInRight {
         animation-duration: 1.5s;
         animation-name: fadeInRight;
     }
-    
+
     @keyframes fadeInRight {
         from {
             opacity: 0;
@@ -146,6 +155,7 @@
             /* margin-left: 15vw; */
             transform: translate(-150px, 0) scale(1);
         }
+
         to {
             opacity: 1;
             /* transform: translate3d(0, 0, 0); */
@@ -153,27 +163,99 @@
             transform: translate(0, 0) scale(1);
         }
     }
-    
+
     .jumbotron .container p {
         max-width: 100vw;
     }
-    
+
     .table {
         max-width: 100vw;
     }
-    
+
     .navbar {
         max-width: 100vw;
     }
 
-    .float-right{
+    .float-right {
         float: right;
     }
 
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
         .card-group {
             display: block;
             flex-flow: row wrap;
         }
     }
 
+    .btn.ver-certificado {
+        transition: 1s;
+    }
+
+    #estudios td a.btn.ver-certificado:hover {
+        background-color: #3c5256;
+        color: #fff;
+    }
+
+    .jumbotron-icon-container {
+        z-index: 999999;
+    }
+
+    /* Particles */
+    /* ---- reset ---- */
+    body {
+        margin: 0;
+        
+    }
+
+    canvas {
+        display: block;
+    }
+
+    /* ---- particles.js container ---- */
+
+    #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /* background-color: #b61924; */
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    /* ---- stats.js ---- */
+
+    .count-particles {
+        background: #000022;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        width: 80px;
+        color: #13E8E9;
+        font-size: .8em;
+        text-align: left;
+        text-indent: 4px;
+        line-height: 14px;
+        padding-bottom: 2px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: bold;
+    }
+
+    .js-count-particles {
+        font-size: 1.1em;
+    }
+
+    #stats,
+    .count-particles {
+        -webkit-user-select: none;
+    }
+
+    #stats {
+        border-radius: 3px 3px 0 0;
+        overflow: hidden;
+    }
+
+    .count-particles {
+        border-radius: 0 0 3px 3px;
+    }
