@@ -52,15 +52,24 @@
     .jumbotron {
         max-width: 100vw;
         height: 100vh;
-        background-image: url("../resoruces/img/portada.jpg");
+        /* background-image: url("../resoruces/img/portada.jpg"); */
         background-attachment: fixed;
         background-position: initial;
         background-repeat: no-repeat;
         background-size: cover;
         background-blend-mode: soft-light;
-        background-color: rgba(0, 0, 0, 0.850) !important;
+        /* background-color: rgba(0, 0, 0, 0.850) !important; */
+        background-color: rgba(0, 0, 0, 1) !important;
         display: flex;
         align-items: center;
+    }
+
+    /* .section{
+        height: 100vh;
+    } */
+
+    .name-desc{
+        z-index: 9;
     }
 
     #sobre-mi .row {
