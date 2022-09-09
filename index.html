@@ -13,16 +13,20 @@
     <link rel="stylesheet" type="text/css" href="resoruces/iconos/css/all.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="js/bootstrap.min.js">
     </script>
     <script src="libs/particles.js-master/particles.min.js">
     </script>
     <!--Mis estilos-->
     <link rel="stylesheet" href="css/estilos.css">
+    <!-- Datatables -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
 </head>
 
 <body>
@@ -44,7 +48,7 @@
                                     Sobre mí
                                 </a>
                             </li>
-                            <li class=" nav-item  ">
+                            <li class=" nav-item ">
                                 <a class=" nav-link " href=" #experiencia ""> Experiencia
                                 </a>
                             </li>
@@ -53,8 +57,12 @@
                                     Portafolio
                                 </a>
                             </li>
-                            <li class=" nav-item  ">
-                                <a class=" nav-link " href=" #estudios ""> Estudios
+                            <li class=" nav-item ">
+                                <a class=" nav-link " href="#estudios"> Conocimientos
+                                </a>
+                            </li>
+                            <li class=" nav-item ">
+                                <a class=" nav-link " href="resoruces/pdf/CV.pdf" target="_blank" > CV
                                 </a>
                             </li>
                         </ul>
@@ -78,6 +86,9 @@
                     <a href="mailto:ticmonares@gmail.com" class="fas fa-envelope jumbotron-icon fadeInUp"
                         target="_blank">
                     </a>
+                    <a href="resoruces/pdf/CV.pdf" class="fas fa-file jumbotron-icon fadeInUp"
+                        target="_blank">
+                    </a>
                 </div>
             </div>
         </div>
@@ -87,7 +98,7 @@
         <div class="row ">
             <div class="col-12 col-lg-6 mt-5 d-flex justify-content-center ">
                 <img class="img-thumbnail rounded float-left mt-5" alt="Responsive image"
-                src="resoruces\img\profile2022.jfif" id="img-porfile">
+                    src="resoruces\img\profile2022.jfif" id="img-porfile">
             </div>
             <div class="col-12 col-lg-6 mt-5">
                 <h2 class="mt-5">Sobre mí</h2>
@@ -96,15 +107,15 @@
                     nuevos proyectos y siempre me entrego el 100%.
                     Me gustan los idiomas y relacionarme con gente de todo el mundo.
                     Realizo análisis, diseño e implementación de soluciones tecnológicas vanguardistas.
-                    La programación es una de las actividades que realmente disfruto
-                    manejo de lenguajes como javascript, PHP, Java y un poco de Python.
+                    La programación es una de las actividades que realmente disfruto.
+                    Tengo experiencia en los lenguajes: Javascript, PHP, Java y un poco de Python.
                     Creo que la UI y UX es tan importante como la lógica y el backend.
             </div>
         </div>
     </div>
     <!--Experiencia-->
     <section class="bg-dark text-white section">
-        <div class="experiencia container mt-5 mb-5 jumbotron-fluid bg-dark " id="experiencia">
+        <div class="experiencia container mt-5 mb-5 pb-5 jumbotron-fluid bg-dark " id="experiencia">
             <div class="row ml-0 mr-0">
                 <div class="col-12 mt-5">
                     <h2 class="mt-5">Experiencia</h2>
@@ -112,7 +123,7 @@
             </div>
             <div class="row ml-0 mr-0">
                 <div class="col-12 table-responsive">
-                    <table class="table table-dark mb-5 text-center ">
+                    <table id="tblExperiencia" class="table table-dark mb-5 text-center ">
                         <thead>
                             <tr>
                                 <th>
@@ -134,31 +145,31 @@
                                 <td>Poder Judicial del Estado de México</td>
                                 <td>Desarrollador Web</td>
                                 <td>Desarrollador Full-Stack de aplicaciónes Web</td>
-                                <td>Actualmente</td>
+                                <td>2020-Actualmente</td>
                             </tr>
                             <tr>
                                 <td>ISIMA</td>
                                 <td>Docente / Programador</td>
                                 <td>Desarrollador Full-Stack</td>
-                                <td>Actualmente</td>
+                                <td>2018-2021</td>
                             </tr>
                             <tr>
                                 <td>Aufsten</td>
                                 <td>Programador</td>
                                 <td>Desarrollo Web Full-Stack</td>
-                                <td>1 año</td>
+                                <td>2017-2018</td>
                             </tr>
                             <tr>
                                 <td>Rhinonet</td>
                                 <td>Programador</td>
                                 <td>Desarrollo Web / Escritorio</td>
-                                <td>1 año</td>
+                                <td>2016-2017</td>
                             </tr>
                             <tr>
                                 <td>Edurob S.A. de C.V.</td>
                                 <td>Diseñador Web</td>
                                 <td>Realización de....</td>
-                                <td>2 años</td>
+                                <td>2014-2016</td>
                             </tr>
                         </tbody>
                     </table>
@@ -260,7 +271,7 @@
     </div>
     <!--Estudios-->
     <section class="bg-dark text-white">
-        <div class="estudios container mt-5 mb-5 jumbotron-fluid bg-dark " id="estudios">
+        <div class="estudios container mt-5 mb-5 pb-5 jumbotron-fluid bg-dark " id="estudios">
             <div class="row ml-0 mr-0">
                 <div class="col-12">
                     <h2 class="mt-5">Conocimientos</h2>
@@ -268,7 +279,7 @@
             </div>
             <div class="row ml-0 mr-0">
                 <div class="col-12 table-responsive">
-                    <table class="table table-dark mb-5 text-center ">
+                    <table id="tableConocimientos" class="table table-dark mb-5 text-center ">
                         <thead>
                             <tr>
                                 <th>
@@ -422,6 +433,38 @@
                                     </a>
                                 </td>
                             </tr>
+                            <tr>
+                                <td>LinkedIn</td>
+                                <td>SCRUM</td>
+                                <td>
+                                    <a class="btn btn-info ver-certificado "
+                                        href="resoruces/pdf/diplomas/CertificadoDeFinalizacion_Aprende SCRUM (2).pdf "
+                                        target="_blank">
+                                        Ver
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>LinkedIn</td>
+                                <td>Github</td>
+                                <td>
+                                    <a class="btn btn-info ver-certificado "
+                                        href="resoruces/pdf/diplomas/CertificadoDeFinalizacion_GitHub para programadores.pdf"
+                                        target="_blank">
+                                        Ver
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>LinkedIn</td>
+                                <td>MySQL</td>
+                                <td>
+                                    <a class="btn btn-info ver-certificado " href="resoruces/pdf/diplomas/CertificadoDeFinalizacion_MySQL esencial.pdf
+                                        target=" _blank">
+                                        Ver
+                                    </a>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -441,13 +484,14 @@
             <a class="fab fa-twitter-square jumbotron-icon" href="https://twitter.com/@FernandoMonare3" target="_blank">
             </a>
         </div>
-        <footer class="blockquote-footer  pb-2 mt-1"> Desarrollado por ticmonares.com
-            <cite title="Source Title">copyright
-                2019
+        <footer class="blockquote-footer  pb-2 mt-1"> ticmonares
+            <cite title="Source Title"> -
+                2022
             </cite>
         </footer>
     </blockquote>
     <script src=" js/main.js"></script>
     <script src=" js/app-particles.js"></script>
 </body>
+
 </html>

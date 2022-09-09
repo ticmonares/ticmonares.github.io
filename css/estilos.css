@@ -68,7 +68,7 @@
         height: 100vh;
     } */
 
-    .name-desc{
+    .name-desc {
         z-index: 9;
     }
 
@@ -213,7 +213,7 @@
     /* ---- reset ---- */
     body {
         margin: 0;
-        
+
     }
 
     canvas {
@@ -267,4 +267,47 @@
 
     .count-particles {
         border-radius: 0 0 3px 3px;
+    }
+
+    /* Datatables */
+    #tblExperiencia_wrapper.dataTables_wrapper .dataTables_length,
+    #tblExperiencia_wrapper.dataTables_wrapper .dataTables_filter,
+    #tblExperiencia_wrapper.dataTables_wrapper .dataTables_info,
+    #tblExperiencia_wrapper.dataTables_wrapper .dataTables_processing,
+    #tblExperiencia_wrapper.dataTables_wrapper .dataTables_paginate {
+        color: #fff;
+    }
+
+    #tblExperiencia_wrapper.dataTables_wrapper .dataTables_length select {
+        background-color: #fff;
+    }
+
+    #tblExperiencia_wrapper.dataTables_wrapper .dataTables_filter input {
+        color: #fff;
+    }
+
+    #tableConocimientos_wrapper.dataTables_wrapper .dataTables_length,
+    #tableConocimientos_wrapper.dataTables_wrapper .dataTables_filter,
+    #tableConocimientos_wrapper.dataTables_wrapper .dataTables_info,
+    #tableConocimientos_wrapper.dataTables_wrapper .dataTables_processing,
+    #tableConocimientos_wrapper.dataTables_wrapper .dataTables_paginate {
+        color: #fff;
+    }
+
+    #tableConocimientos_wrapper.dataTables_wrapper .dataTables_length select {
+        background-color: #fff;
+    }
+
+    #tableConocimientos_wrapper.dataTables_wrapper .dataTables_filter input {
+        color: #fff;
+    }
+
+    #tblExperiencia_wrapper.dataTables_wrapper .dataTables_paginate .paginate_button,
+    #tableConocimientos_wrapper.dataTables_wrapper .dataTables_paginate .paginate_button {
+        color: #fff !important;
+    }
+
+    #tblExperiencia_wrapper.dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+    #tableConocimientos_wrapper.dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+        color: rgb(101, 100, 100) !important;
     }
